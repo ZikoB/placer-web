@@ -1,0 +1,32 @@
+main {
+	width: 90%;
+	margin: 0 auto;
+	overflow-x: hidden;
+
+	@include md {
+		width: $max-width;
+	}
+
+	.landing-hero {
+		img {
+			width: 100px;
+		}
+	}
+
+	.floating-shape {
+		position: absolute;
+		z-index: -1;
+		top: -50px;
+		right: -600px;
+		background-color: $navy-blue;
+		border-radius: 40px;
+		width: 800px;
+		height: 600px;
+		transform: rotate(40deg);
+	}
+
+	.landing-hero {
+		display: flex;
+		justify-content: flex-end;
+	}
+}

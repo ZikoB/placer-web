@@ -1,0 +1,7 @@
+h1 {
+	@include font-size(4rem);
+}
+
+p {
+	@include font-size(1rem);
+}

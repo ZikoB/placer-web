@@ -1,17 +1,11 @@
 import Layout from '../components/Layout'
-import styled from 'styled-components'
+import Landing from '../components/Landing'
 
-const Title = styled.h1`
-	font-size: 50px;
-	color: ${({ theme }) => theme.colors.dark_blue};
-`
+import '../sass/main.css'
 
 const Index = () => (
 	<Layout>
-		<div>
-			<Title>PlacerWeb</Title>
-			<p>Check our page</p>
-		</div>
+		<Landing />
 	</Layout>
 )
 

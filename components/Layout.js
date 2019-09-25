@@ -1,19 +1,20 @@
 import Head from 'next/head'
 import Navbar from './Navbar'
+import Footer from './Footer'
 
-import styled from 'styled-components'
-
-const PageLayout = styled.div`
-	background-color: blue;
-`
-
-const Layout = () => (
-	<PageLayout>
+const Layout = ({ children }) => (
+	<>
 		<Head>
 			<title>PlacerWeb</title>
+			<link
+				href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap"
+				rel="stylesheet"
+			></link>
 		</Head>
 		<Navbar />
-	</PageLayout>
+		<main>{children}</main>
+		<Footer />
+	</>
 )
 
 export default Layout
