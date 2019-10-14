@@ -1,7 +1,25 @@
 h1 {
 	@include font-size(4rem);
+	font-weight: bold;
+	line-height: 1.1;
+}
+
+h2 {
+	@include font-size(3.6rem);
+	font-weight: bold;
+	line-height: 1.1;
+}
+
+h3 {
+	@include font-size(3.2rem);
+	font-weight: bold;
 }
 
 p {
 	@include font-size(1rem);
+	line-height: 1.1;
+}
+
+.btn {
+	font-weight: bold;
 }
